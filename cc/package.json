@@ -68,5 +68,5 @@
   "devDependencies": {
     "@capacitor/cli": "3.3.3"
   },
-  "description": "An Ionic project"
+  "description": "Çözelti Software tarafından geliştirilen kart bilgisi kayıt programı"
 }

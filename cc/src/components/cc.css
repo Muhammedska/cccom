@@ -1,0 +1,15 @@
+@import url('../theme/variables.css');
+/* Util Css */
+.width-fill{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* soft style */
+.soft-edge{
+    border-radius: 15px;
+}
+.bg-tertiary{
+    background-color:var(--ion-color-tertiary)
+}
