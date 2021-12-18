@@ -1,0 +1,19 @@
+{
+  "name": "cc",
+  "version": "1.0.0",
+  "description": "cc save app",
+  "main": "index.js",
+  "scripts": {
+    "test": "serve "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammedska/cccom.git"
+  },
+  "author": "Bengi ARTZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammedska/cccom/issues"
+  },
+  "homepage": "https://github.com/Muhammedska/cccom#readme"
+}

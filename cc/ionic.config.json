@@ -1,0 +1,7 @@
+{
+  "name": "cc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
