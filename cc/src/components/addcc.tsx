@@ -1,7 +1,7 @@
 import "./bootstrap.min.css";
 import "./cc.css";
 import "../theme/variables.css";
-import sqlite3 from 'sqlite3';
+
 import React, { useState } from "react";
 import {
   IonGrid,
@@ -15,8 +15,8 @@ import {
   IonLabel,
   IonButton,
 } from "@ionic/react";
-
-let db = new sqlite3.Database('./cc.db');
+const sqlite = require('sqlite3');
+//let db = new sqlite3.Database('./cc.db');
 const ExploreContainer: React.FC = () => {
   const [text, setText] = useState<string>();
   const [cvv, setCvv] = useState<string>();
