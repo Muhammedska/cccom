@@ -35,7 +35,8 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-
+import "./components/cc.css";
+import "./components/bootstrap.min.css";
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -56,8 +57,8 @@ const App: React.FC = () => (
             <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+        <IonTabBar slot="bottom" className='soft-edge-bar width-80' color='warning'>
+          <IonTabButton tab="tab1" href="/tab1"  >
             <IonIcon icon={addCircleOutline} />
             <IonLabel>CC Ekle</IonLabel>
           </IonTabButton>

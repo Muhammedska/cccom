@@ -16,49 +16,32 @@ import {
 
 const ExploreContainer: React.FC = () => {
   const [text, setText] = useState<string>();
+  const [cvv, setCvv] = useState<string>();
   const [number, setNumber] = useState<number>();
 
   return (
     <div className="container-fluid my-4">
-      <IonList>
-        <IonItemDivider>Default Input with Placeholder</IonItemDivider>
-        <IonItem>
-          <IonInput
-            value={text}
-            placeholder="Enter Input"
-            onIonChange={(e) => setText(e.detail.value!)}
-          ></IonInput>
-        </IonItem>
-
-        <IonItemDivider>
-          Input with clear button when there is a value
-        </IonItemDivider>
-        <IonItem>
-          <IonInput
-            value={text}
-            placeholder="Enter Input"
-            onIonChange={(e) => setText(e.detail.value!)}
-            clearInput
-          ></IonInput>
-        </IonItem>
-
-        <IonItemDivider>Number type input</IonItemDivider>
-        <IonItem>
-          <IonInput
-            type="number"
-            value={number}
-            placeholder="Enter Number"
-            onIonChange={(e) => setNumber(parseInt(e.detail.value!, 10))}
-          ></IonInput>
-        </IonItem>
-      </IonList>
-      <IonItem className="soft-edge bg-tertiary">
-        <IonLabel position="floating">Floating Label</IonLabel>
+      
+      <IonItem className="soft-edge bg-tertiary" color='tertiary'>
+        <IonLabel position="floating" >Kart Numarası</IonLabel>
         <IonInput
           max="9999999999999999"
+          autocomplete="cc-number"
+          onIonChange={(e) => setText(e.detail.value!)}
           maxlength={16}
-          type="number"
           value={text}
+          clearInput
+        ></IonInput>
+      </IonItem>
+      <br />
+      <IonItem className="soft-edge bg-tertiary" color='tertiary'>
+        <IonLabel position="floating" >CVV Numarası</IonLabel>
+        <IonInput
+          max="999"
+          autocomplete="cc-number"
+          onIonChange={(e) => setCvv(e.detail.value!)}
+          maxlength={3}
+          value={cvv}
           clearInput
         ></IonInput>
       </IonItem>

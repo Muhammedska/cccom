@@ -5,10 +5,18 @@
     width: 100%;
     height: auto;
 }
-
+.width-80{
+    position: relative;
+    margin-bottom: 5px;
+    width: 80%;
+    left: 10%;
+}
 /* soft style */
 .soft-edge{
     border-radius: 15px;
+}
+.soft-edge-bar{
+    border-radius: 25px;
 }
 .bg-tertiary{
     background-color:var(--ion-color-tertiary)
