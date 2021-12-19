@@ -67,7 +67,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.3.3"
+    "@capacitor/cli": "3.3.3",
+    "@types/sqlite3": "^3.1.8"
   },
   "description": "Çözelti Software tarafından geliştirilen kart bilgisi kayıt programı"
 }
