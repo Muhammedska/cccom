@@ -11,14 +11,15 @@ import {
 import { addCircleOutline } from "ionicons/icons";
 import ExploreContainer from "../components/addcc";
 import "./Tab1.css";
+import "../components/cc.css";
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
+      <IonHeader className='text-center container-fluid'>
+        <IonToolbar className='soft-edge-bar'>
           <IonTitle>
-            <IonLabel>Kart Ekle</IonLabel>{" "}
+            <IonLabel>Kart Ekle</IonLabel>
           </IonTitle>
         </IonToolbar>
       </IonHeader>

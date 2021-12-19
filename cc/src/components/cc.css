@@ -5,6 +5,9 @@
     width: 100%;
     height: auto;
 }
+.width-100{
+    width: 100%;
+}
 .width-80{
     position: relative;
     margin-bottom: 5px;
